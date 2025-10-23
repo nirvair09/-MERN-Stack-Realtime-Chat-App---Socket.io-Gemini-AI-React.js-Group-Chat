@@ -1,10 +1,11 @@
 import mongoose ,{Document,Schema} from "mongoose";
 
 
-export interface ChatDocument extend Document{
+export interface ChatDocument extends Document{
     participants:mongoose.Types.ObjectId[];
     lastMessage:mongoose.Types.ObjectId;
     isGroup:boolean;
+    groupName:string;
     createdBy:mongoose.Types.ObjectId;
     createdAt:Date;
     updatedAt:Date;
