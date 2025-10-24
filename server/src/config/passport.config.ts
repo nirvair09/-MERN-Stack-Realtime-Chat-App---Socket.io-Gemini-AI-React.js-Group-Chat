@@ -1,6 +1,6 @@
 import passport from "passport";
 import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
-import { UnauthorizedException } from "../utils/app-error";
+import { UnauthorizedException } from "../utils/app-error.ts";
 import { Env } from "./env.config.ts";
 import { findByIdUserService } from "../services/user.service.ts";
 
